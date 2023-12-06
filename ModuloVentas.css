@@ -1,0 +1,86 @@
+.RElleno_Ejemplo{
+    width: 30px;
+    height: 60px;
+    display:block;
+}
+
+
+.caja{
+    display: flex;
+    justify-content: space-around;
+}
+
+.espaciado{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.textos{
+    margin: auto;
+    color: aliceblue;
+    position: relative;
+    left: 225px; /*El tope son 200 pixeles*/
+}
+
+.pic{
+    position: relative;
+    z-index: 1000;
+    
+}
+              /*Diseño tablet */
+
+@media (min-width: 770px) and (max-width: 1000px) {
+    .caja{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.espaciado{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height:cover;
+    
+}
+.textos{
+    margin: auto;
+}
+
+.pic{
+    position: relative;
+    z-index: 1000;
+    
+}
+}
+
+/*Diseño mobile -------------------------------------------------------*/
+
+@media (max-width: 768px) {
+    
+        .caja{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.espaciado{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    width:full;
+    
+}
+
+.textos{
+    margin: auto;
+    
+}
+.pic{
+    position: relative;
+    z-index: 1000;
+    
+}
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Prueba numero Uno flexbox</title>
+
+</head>
+
+<body>
+    <name class = nombre> Charmander </name>
+    <contenedor class="churmander"> 
+        
+        <img src="https://i.pinimg.com/originals/5d/35/4d/5d354db03d79dba85b3068fa3eb9595d.png"> 
+    </contenedor>
+    <atributos class="atributtos">
+        <tipo class="t">Fuego</tipo>
+        <tipo class="d">Agua</tipo>
+        <tipo class="d">Tierra</tipo>
+        <tipo class="d">Roca</tipo>
+    </atributos>
+
+    
+body { 
+    background-color: #F29A65;
+    display: flex;
+    justify-content: apace-around;
+    
+  }
+  .nombre{
+    justify-content: center;
+    background-color: white;
+  
+    text-align: center;
+    padding: 5px;
+    height:50px;
+    width: 250px;
+    margin: 5px;
+    font-size: 3em;
+    border-radius: 3%;
+    color: orange;
+  }
+  
+  .churmander{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    
+            
+      }
+  .atributtos{
+    text-align: center; 
+    margin: 10px;
+    font-size: 2em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .t{
+  
+    padding: 5px;
+    height:50px;
+    width: 250px;
+    margin: 5px;
+    border-radius: 3%;
+    background-color: white;
+    
+    
+  }
+  .d{
+    padding: 5px;
+    height:50px;
+    width: 250px;
+    margin: 5px;
+    border-radius: 3%;
+    background-color: gray;
+    color: white;
+    
+  }
+</body>
+
+<html>

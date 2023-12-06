@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ModuloVentas.css">
+</head>
+<body>
+    <div class="RElleno_Ejemplo">
+
+
+    </div>
+    
+    <div class= "espaciado">
+        <div class = "caja">
+        <div class = "textos"> <!--los elementos dentro de esta sección se van a cambiar por por campos de texto enriquesido-->
+            
+            <h1> desde hace mucho tiempo, el hombre siempre ha querido conseguir su más preciado sueño, la libertad</h1>
+
+            <div class = "boton">
+            <button>Inscribete</button>
+        </div>
+        </div>
+        <div class = "foto">
+        <img class="pic" src= "https://i.kym-cdn.com/photos/images/newsfeed/000/998/692/1da.jpg" />
+    </div>
+</div>
+</div>      
+
+<style>
+        .espaciado{
+        background-image: url("https://www.androidsis.com/wp-content/uploads/2018/10/runescape-old-school.jpg");
+        }
+        .espaciado{
+        height:350px;
+        }
+        .caja{
+            width: 909px;
+            flex-direction: row-reverse;
+        }
+        
+        .textos{
+            width:230px;
+            height:405px;
+        }
+        
+        .pic{
+            width:380px;
+            height:400px;
+            bottom: 40px; left: 80px;
+        }
+        
+        @media (min-width: 770px) and (max-width: 1000px) {
+            
+            .caja{
+            width: 809px;
+        }
+        
+        .textos{
+            width:405px;
+            height:230px;
+        }
+
+        .pic{
+            width:350px;
+            height:330px;
+            bottom: 80px; left:0;
+        }
+        }
+        @media (max-width: 768px) {
+            .caja{
+                flex-direction: column-reverse;
+            }
+            .espaciado{
+            height:475px;
+            /* padding-top:50px; */
+        }
+        .textos{
+            width:300px;
+            height:170px;
+            display: block;
+            
+
+        }
+        .pic{
+            width:287.78px;
+            height:259px;
+            /* top: 40px;*/ 
+            left:300px; 
+            bottom: 50px;
+            
+        }
+        
+    }
+        
+    </style>
+</body>
+</html>
